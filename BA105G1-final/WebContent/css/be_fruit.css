@@ -1,0 +1,101 @@
+		#fastbtn{
+		  width:70px;
+		  right:2px;
+		  position:fixed; /*固定位置定位*/
+		  top:18%; /*距離上方 0 像素*/
+		  z-index:30; /*重疊時會在其他元素之上*/
+		}
+		#fastbtn_div_top{
+			padding-left: 15px;
+			padding-right: 25px;
+			display: none;
+		}
+		.fastbtn_icon{
+			display: inline;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2px;
+			width: 72%;
+		}
+		#fastbtn img:hover,#fastbtn img:active{
+			width: 82%;
+			display:inline;
+		}
+		#fastbtn img:active{
+		  transform: translateY(4px);
+		}
+			body,html{
+				font-family: 微軟正黑體;
+				font-size: 18px;
+				color: #652825;
+				background-image: url(../res/image/back-end/headerBG.jpg);
+				height: 100%;
+			}
+			img{
+				width: 100%;
+				margin: auto;
+			}
+			a,a:hover,a:link,a:active,a:visited{
+				text-decoration: none;
+				color: #652825;
+			}
+			#be_navbar .panel.panel-info{
+				margin-top: 0;
+				border:1px #c9c9c9 solid;
+				
+			}
+			#be_navbar .panel-heading{
+				background-image: radial-gradient(ellipse,white,#dfffea,#b8f1cc);
+				color: #652825;
+				border-top: 1px;
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			#be_navbar .panel-title{
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+			#be_navbar .panel-body{
+				font-size: 1em;
+				text-align: center;
+				padding: 0;
+			}
+			#be_navbar img{
+				width: 100%;
+				border-radius: 100px;
+				border:1px  #C9FFFF solid;
+			}
+			#be_navbar #sayHi{
+				margin-top:5px;
+				color: black;
+				font-size: 1em;
+			}
+			#header{
+				height: 50px;
+				border: 2px #e7dac9 solid;
+				margin-bottom: 10px;
+				background-image: linear-gradient(to top, white , #ffe543);
+				border-radius: 10px;
+			}
+			#header img{
+				width: 25px;
+			}
+
+			#header h3{
+				margin-top: 10px;
+			}
+			#header h5{
+				margin: 0;
+			}
+			#be_navbar .panel-body:focus, #be_navbar .panel-body:hover {
+	    		background-image: radial-gradient(ellipse,white,#f0ffff,#C9FFFF);
+			}
+			#be_navbar .panel-info>.panel-heading:focus, #be_navbar .panel-info>.panel-heading:hover {
+				background-image: radial-gradient(ellipse,white,white,#b8f1cc);
+			}
+	
+			.breadcrumbs{
+				color:purple;
+			}
+			

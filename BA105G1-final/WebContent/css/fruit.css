@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+		.logo{
+			width:105px;
+			float: left;
+			margin-right: 30px;
+			margin-left: 30px;
+			margin-top: 11px;
+		}
+		.navbar{
+			background-image: linear-gradient(to top, white , #D8F09A,#D8F09A);
+			border-bottom:1px white outset;
+			border-radius: 10px;
+			text-align: center;
+			margin-top: -11px;
+		}
+		.navbar_left{
+			text-align: center;
+			color: #652825;
+			width: 100px;
+			height: 110px;
+			float: left;
+			border-left:1px white solid;
+			border-right:1px white solid;
+			border-radius: 8px;
+		}
+		.navbar_left:hover,.navbar_right:hover{
+			background-image: linear-gradient(to top, white , #7FFFD4, #7FFFD4);
+		}
+		.navbar_right{
+			text-align: center;
+			color: #652825;
+			width: 50px;
+			height: 50px;
+			float: right;
+			border:1px white dotted;
+			border-radius: 8px;
+			font-size: 14px;
+			text-align: center;
+			vertical-align: center;
+		}
+		.navbar_right>h5{
+			margin:0;
+		}
+		.navbar_right_container{
+			float: right;
+			margin-top: 5px;
+			margin-right: 50px;
+		}
+		.icon_left{
+			width: 40px;
+			margin-top: 20px;
+		}
+		.icon_right{
+			width: 25px;
+			margin-top: 3px;
+		}
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    		background-image: radial-gradient(40px,#F5E2AB,#FF9E0D);
+		}
+
+		body{
+			font-family: 微軟正黑體;
+			font-size: 18px;
+			color: #652825;
+			background: linear-gradient(to bottom right,white,#F5E2AB);
+		}
+		img{
+			width: 100%;
+			display: block;
+			margin: auto;
+		}
+		a,a:hover,a:link,a:active,a:visited{
+			text-decoration: none;
+			color: #652825;
+		}
+		#wapper{  
+		    position: relative;   /*重要！保证footer是相对于wapper位置绝对*/  
+		    height: auto;          /* 保证页面能撑开浏览器高度时显示正常*/  
+		    min-height: 100%  /* IE6不支持，IE6要单独配置*/  
+		}  
+		 
+		#main-content{  
+		    padding-bottom: 140px; /*重要！给footer预留的空间*/  
+		}  
+		#footer{  
+		    position: relative;  
+		    bottom: 0; 
+		    left:0; 
+		    height: 140px;          
+			width: 100%;
+			background-image: linear-gradient(to bottom,white,#D8F09A,#D8F09A);
+			border-bottom:1px white outset;
+			border-radius: 10px;
+			text-align: center;
+			vertical-align: center;
+			display: block;
+			padding-top:45px;
+			padding-bottom: auto;
+            word-break: break-all;
+		} 
+		#fastbtn{
+		  width:70px;
+		  right:2px;
+		  position:fixed; /*固定位置定位*/
+		  top:25%; /*距離上方 0 像素*/
+		  z-index:7; /*重疊時會在其他元素之上*/
+		}
+		#fastbtn_div_top{
+			padding-left: 15px;
+			padding-right: 25px;
+			display: none;
+		}
+		.fastbtn_icon{
+			display: inline;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2px;
+			width: 72%;
+		}
+		#fastbtn img:hover,#fastbtn img:active{
+			width: 82%;
+			display:inline;
+		}
+		#fastbtn img:active{
+		  transform: translateY(4px);
+		}
+		@media screen and (max-width:1220px){
+			.navbar-toggle{
+				display: inline;
+				float: left;
+				margin-top: 20px;
+				border: 1px #652825 outset;
+				background-image: radial-gradient(40px,white,#f0e68c);
+			}
+			.navbar{
+				height: 122px;
+			}
+			.leftIn{
+				position: fixed;
+				background-image: linear-gradient(to top,white,#D8F09A,#D8F09A);
+				overflow: auto;
+				width: 100%;
+				height: 410px;
+				top: 112px;
+				z-index: 9;
+				transition: 0.5s;
+				border: 1px white outset;
+				border-radius: 10px;
+			}
+			.leftIn{
+				left: -100%;
+			}
+			.rightIn{
+				right: -100%;
+			}
+			.leftIn.leftIn.open{
+				left: 0;
+			}
+			.leftIn.rightIn.open{
+				right: 0;
+			}
+			.logo{
+				margin-left: 0;
+			}
+			.icon_left,.icon_right{
+				display: none;
+			}
+			.navbar_left{
+				width: 100%;
+				height: 40px;
+				border: 1px white solid;
+			}
+			.navbar_right_container{
+				margin-right: 30px;
+				display: block;
+				margin-left: auto;
+			}
+			.navbar_right{
+				border: 1px white solid;
+				height: 100%;
+			}
+			
+		}
+
+
+	.modal-backdrop.in{
+		background-color:gray;
+		opacity:0.5;
+		z-index:0;
+	}
+	#memberLoginForm{
+		background-image: linear-gradient(to top, white , #D8FCFF, white);
+		border-bottom-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-top-right-radius:3px;
+		border-top-left-radius:3px;
+		width:100%;
+	}
+	
+	#shopLoginForm{
+		background-image: linear-gradient(to top , white, #D8FBDA, white);
+		border-bottom-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-top-right-radius:3px;
+		border-top-left-radius:3px;
+		width:100%;
+	}
+		@media screen and (max-width:992px){
+			#footer{
+				font-size: 14px;
+				padding-top: 10px;
+			}
+		}
+		@media screen and (max-width:400px){
+			.h4, h4{
+				font-size: 15px;
+			}
+		}
